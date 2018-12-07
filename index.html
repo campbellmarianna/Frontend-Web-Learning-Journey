@@ -1,24 +1,82 @@
-<!DOCtype>
+<!doctype html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>FEW Practice</title>
         <style>
-            div {
-                border-right: 4px dashed blue;
-                background-color:gold;
-                height: 100px;
-                width: 200px;
+            body {
+                font-family: Helvetica;
+                font-size: 18px;
+            }
+            .calculate-button {
+                border: 2px solid;
+                border-radius: 0.5em;
+                padding: 0.5em;
+                font-size: 1em;
+                background-color: #eee;
+            }
+            .calculator-container {
+                width: 240px;
+                margin: auto;
+
+                display: flex;
+                flex-direction: column;
+
+                padding: 2em;
+            }
+
+            .calculate-input-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .calculate-input-container > input {
+                border: 2px solid;
+                border-radius: 0.5em;
+                padding: 0.5em;
+                font-size: 1em;
+            }
+
+            .calculator-input-contianer > label {
+                font-size: 0.75em;
                 font-weight: bold;
-                text-align: center;
+                margin: 0.25em;
+            }
+
+            .calculate-display-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
             }
         </style>
     </head>
     <body>
-        <div>
-        This box has a border on the right side.
-        </div>
-        <script>
+        <!-- Tip Calculator -->
+        <div class="calculator-container">
+            <p class="calculator-input-container">
+                <label for="amount">Bill</label>
+                <input id="amount" type="number" value="0.00">
+            </p>
 
-        </script>
+            <p class="calculator-input-container">
+                <label for="percent">Tip %</label>
+                <input id="percent" type="number" value="15">
+            </p>
+
+            <button class="calculate-button">Calculate</button>
+
+            <p class="calculate-display-container">
+                <span>Tip:</span>
+                <span id="tip">0.00</span>
+            </p>
+
+            <p class="calculator-display-container">
+                <span>Total:</span>
+                <span id="total">0.00</span>
+            </p>
+        </div>
+
+        <!--Script-->
+        <script src="main.js"></script>
     </body>
 </html>
