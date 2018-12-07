@@ -1,0 +1,152 @@
+Study Guide
+This guide outlines the things you should study yo pass the final assessment.
+
+Resources
+HTML
+    - *Syntax: https://developer.mozilla.org/en-US/docs/Glossary/HTML
+    - *Semantic HTML: https://internetingishard.com/html-and-css/semantic-html/
+        - Don't need closing tag - Ex: <br>
+        - the meaning behind the tags
+        - say this with a particular task
+        - address going in the address tag
+
+CSS
+    - *Syntax: https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Syntax (child and de)
+        - margin
+        - padding
+    - *Selectors: https://flukeout.github.io
+    - Box Model: https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap
+    - Flex Box: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+    - Grid: https://developer.mozilla.org/en-US/docs/Glossary/Grid
+
+JavaScript
+    - Objects: https://javascript.info/object
+    - Loops: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code
+    - Arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+    - DOM: https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+    - Event Listeners: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
+
+Practical Examples
+You should feel confident about the following examples from class. That is you should feel you can understand the code from these examples when you read them, and feel confident you could build these examples on your own.
+
+Tip Calculator
+Loops and Objects
+
+
+--------------------------------------------------------------------------------
+In class review:
+attribute
+<tagname type="">
+
+rule
+p {
+
+}
+
+<p class=info>
+	Words..
+	<strong>wow!</strong>
+</p>
+a rule on the selector
+p.info > strong {
+	color: red'
+}
+
+// Space is the Decendent Indicator
+// > is for child
+
+#info strong {
+
+}
+
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+li:nth-child(2n) {
+	background-color: lightgray;
+	border-bottom: 1px solid
+}
+
+li: last-child {
+	border: none;
+}
+
+// Can
+<div class="navbar">
+	<button class="button pick-me">Item 1</button>
+	<button class="button">Item 2</button>
+	<button class="button">Item 3</button>
+</div>
+
+.navbar {
+	display: flex;
+	flex-direction: row; /* Main axis*/
+	justify-content: space-between
+	align-items: center;
+
+}
+
+.button /* Main axis*/
+
+.pick-me /* This would override .button*/
+
+---------------------------
+GRID
+<div class="navbar">
+	<button class="button">Item 1</button>
+	<button class="button">Item 2</button>
+	<button class="button">Item 3</button>
+</div>
+
+.navbar {
+	display: grid;
+	grid-template-columns:
+}
+
+function area(length) {
+	area - window or global scope
+	const area - block scope (easier for the computer to keep track of, because the computer doesn't have to keep a little more memory because it will change )
+	let area - block scope (good for something that changes)
+	var area - functions scope
+	return
+}
+// Call the function contain the return value
+const a = area(15, 30)
+console.log()
+
+class Animal {
+	constructor(name, fur) {
+		this.name = name
+		this.hasFur - hasFur
+	}
+
+	speak() {
+		console.log(this.name + 'speak')
+		console.log(`${this name} speak`)
+	}
+}
+
+const cat = new Animal('Cat', true)
+
+const obj = {
+	p1: "",
+	p2:
+}
+
+<div class="special">6</div>
+
+.special {
+	position: relative;
+	left: 30px;
+
+}
+
+// Grid lays out all the children
+// If you give something absolute position it will look for its context.
+// if something in grid is relative whatever you want to select inside
